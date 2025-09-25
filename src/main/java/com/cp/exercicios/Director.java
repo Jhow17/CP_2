@@ -19,6 +19,6 @@ public class Director extends Manager{
 
     @Override
     public Double getWage(){
-        return super.getWage() * porcentagemParticipacaoLucros;
+        return super.getWage() + bonus + super.getWage() * porcentagemParticipacaoLucros;
     }
 }
